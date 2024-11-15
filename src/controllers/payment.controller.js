@@ -53,7 +53,7 @@ const capturePayment = async (req, res) => {
 
     const { token } = req.query;
 
-    const response = await axios.post(`${PAYPAL_API}/v2/checkout/orders/${token}/capture`, null, {
+    const response = await axios.post(`${PAYPAL_API}/v2/checkout/orders/${token}/capture`, {}, {
         auth: {
             username: CLIENT_PAYPAL,
             password: SECRET_PAYPAL
