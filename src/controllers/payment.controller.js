@@ -66,7 +66,7 @@ const capturePayment = async (req, res) => {
 };
 
 const cancelPayment = (req, res) => {
-    return res.redirect('https://videogames-appchallenge.netlify.app//');
+    return res.redirect('https://videogames-appchallenge.netlify.app/');
 };
 
 export {
