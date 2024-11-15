@@ -6,7 +6,7 @@ import cors from 'cors';
 const app = express();
 
 app.use(cors({
-    origin: 'https://videojuegos-project-adrian.netlify.app'
+    origin: 'https://videogames-appchallenge.netlify.app/'
 }));
 
 app.use(express.json());
