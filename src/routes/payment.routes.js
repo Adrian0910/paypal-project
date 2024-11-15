@@ -8,7 +8,7 @@ import{
 
 const router = Router();
 
-router.get('/create-order', function(req, res){
+router.post('/create-order', function(req, res){
     createOrder(req, res);
 });
 
