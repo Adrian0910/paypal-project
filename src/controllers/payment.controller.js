@@ -62,11 +62,11 @@ const capturePayment = async (req, res) => {
 
     console.log(response.data);
 
-    return res.redirect('https://gabitoguitar.netlify.app/');
+    return res.redirect('https://videojuegos-project-adrian.netlify.app/');
 };
 
 const cancelPayment = (req, res) => {
-    return res.redirect('https://gabitoguitar.netlify.app/');
+    return res.redirect('https://videojuegos-project-adrian.netlify.app/');
 };
 
 export {

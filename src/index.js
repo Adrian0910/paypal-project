@@ -6,7 +6,7 @@ import cors from 'cors';
 const app = express();
 
 app.use(cors({
-    origin: 'https://gabitoguitar.netlify.app'
+    origin: 'https://videojuegos-project-adrian.netlify.app'
 }));
 
 app.use(express.json());
