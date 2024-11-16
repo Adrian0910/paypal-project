@@ -49,6 +49,7 @@ const createOrder = async (req, res) => {
 
 const capturePayment = async (req, res) => {
   const { token } = req.query;
+  const {id} = response.data
 
   const response = await axios.post(
     `${PAYPAL_API}/v2/checkout/orders/${token}/capture`,
@@ -63,7 +64,8 @@ const capturePayment = async (req, res) => {
 
   console.log(response.data);
 
-  return res.json(response.data.id);
+  return res.json("número de compra: ", id);
+  
 };
 
 const cancelPayment = (req, res) => {
