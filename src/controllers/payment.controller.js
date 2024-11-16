@@ -63,8 +63,7 @@ const capturePayment = async (req, res) => {
 
   console.log(response.data);
 
-  //return res.redirect("https://videogames-appchallenge.netlify.app");
-  return res.json(response.data)
+  return res.send("Orden creada: ", response.data);
 };
 
 const cancelPayment = (req, res) => {
