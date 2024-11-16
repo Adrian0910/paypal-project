@@ -63,7 +63,7 @@ const capturePayment = async (req, res) => {
 
   console.log(response.data);
 
-  return res.json(response.data.id, response.data.urchase_units.name);
+  return res.json(response.data.id);
 };
 
 const cancelPayment = (req, res) => {
